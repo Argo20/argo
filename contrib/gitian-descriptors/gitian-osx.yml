@@ -1,5 +1,5 @@
 ---
-name: "argo-osx-0.12"
+name: "argo-osx-1.1.0"
 enable_cache: true
 suites:
 - "trusty"
@@ -21,9 +21,9 @@ packages:
 - "libbz2-dev"
 - "ca-certificates"
 - "python"
-reference_datetime: "2017-01-01 00:00:00"
+reference_datetime: "2018-08-20 00:00:00"
 remotes:
-- "url": "https://github.com/argopay/argo.git"
+- "url": "https://github.com/Argo20/argo.git"
   "dir": "argo"
 files:
 - "MacOSX10.9.sdk.tar.gz"
