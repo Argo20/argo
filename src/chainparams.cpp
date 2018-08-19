@@ -127,7 +127,7 @@ public:
         pchMessageStart[1] = 0xd2;
         pchMessageStart[2] = 0xca;
         pchMessageStart[3] = 0xdc;
-        vAlertPubKey = ParseHex("049da9e573a09feca59113193b6e05c697c9518eee14d3acbcb9ea23ee4955da2238d0361225e365456bc114319dce2772cffaa8313095e6fb14f023dc6bb6bbbc");
+        vAlertPubKey = ParseHex("04552bb2a9f28e7e1826a2639d7cfd8af76b97400973d2e2f5793153be67ab7dc03b61c5ecc4798d65ffe3aa3022d87dc1c0774fc97a38ca6cb3ce5a7a29ade8a2");
         nDefaultPort = 8989;
         nMaxTipAge = 6 * 60 * 60;
         nDelayGetHeadersTime = 24 * 60 * 60;
@@ -167,7 +167,7 @@ public:
 
         nPoolMaxTransactions = 3;
         nFulfilledRequestExpireTime = 60*60; // fulfilled requests expire in 1 hour
-        strSporkPubKey = "04a297265b8d09cc43a8fb956ec3486b6678aa3facd2d0ed96cf4a6ac7379101cdf6b31e11f05fabc6159c0514a9a27e8349e112a13fbc9be3c2cedf3e05c1bd15";
+        strSporkPubKey = "041cf2ea67fa50284f99e497ceabdc3f94da7ac72457707ff6fd77041107ccb5fba834864159ee58bf5503c7d308cba0d2fd233ce834de6951bc1bf63f79c5a898";
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
@@ -241,7 +241,7 @@ public:
         pchMessageStart[1] = 0xb8;
         pchMessageStart[2] = 0xbe;
         pchMessageStart[3] = 0xd6;
-        vAlertPubKey = ParseHex("04e79673801e2d3ca929dac5d525c127d6380c779adad2429d79c9a5e53a8a0d26693ad73908d9ad0cd2374081c13a5eeebf8d777d0c61f3a125181216fe1a87d0");
+        vAlertPubKey = ParseHex("04dde7190d20c047379aa5a1bb37607c39098ec077790dc9d294e22068f631e617ad7673c00c58fbb041b845bf1a5cbfc333c93b6218b49c5788fe6666a011194d");
         nDefaultPort = 18989;
         nMaxTipAge = 0x7fffffff; // allow mining on top of old blocks for testnet
         nDelayGetHeadersTime = 0x7fffffff;
@@ -280,7 +280,7 @@ public:
 
         nPoolMaxTransactions = 3;
         nFulfilledRequestExpireTime = 5*60; // fulfilled requests expire in 5 minutes
-        strSporkPubKey = "04aa0889a0b472d0f18bc5446eb6255ffa93697579cad1491a041b67a25b1af139792ba8cadb1a798c6c3778d6fe60903a3ecf43459238a22b978f7878c5533780";
+        strSporkPubKey = "04d5f0f5e3f9fe16ca8b63165d4f9e7a203078f34f5337018eb44e504d51afb88f3c640f065c5a2438287edeacdefa42d1da231780b321e0267b7dfe8c006a8394";
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
