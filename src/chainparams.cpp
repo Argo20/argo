@@ -139,8 +139,9 @@ public:
         assert(consensus.hashGenesisBlock == uint256S("0x000005ece8d1964dc550f050f35c45398a4b9dda3158040e0519b9c230b91ed6"));
         assert(genesis.hashMerkleRoot == uint256S("0x75a67463b386bb01fdea1160f4fad1c8cabd6cd86cdd76cd3a4c23af8cf71103"));
 
-
-        vSeeds.push_back(CDNSSeedData("argocash.com", "dnsseed.argocash.com"));
+        // Until new domain is acquired, fixed trusted IP addresses are used to bootstrap
+        vSeeds.push_back(CDNSSeedData("argocash.com", "45.77.99.107"));
+        vSeeds.push_back(CDNSSeedData("argocash.com", "144.202.39.176"));
 
         // Argo addresses start with 'A'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,23);
