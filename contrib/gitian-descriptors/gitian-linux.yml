@@ -111,7 +111,7 @@ script: |
     find ${DISTNAME}/bin -type f -executable -exec objcopy --only-keep-debug {} {}.dbg \; -exec strip -s {} \; -exec objcopy --add-gnu-debuglink={}.dbg {} \;
     find ${DISTNAME}/lib -type f -exec objcopy --only-keep-debug {} {}.dbg \; -exec strip -s {} \; -exec objcopy --add-gnu-debuglink={}.dbg {} \;
     find ${DISTNAME} -not -name "*.dbg" | sort | tar --no-recursion --mode='u+rw,go+r-w,a+X' --owner=0 --group=0 -c -T - | gzip -9n > ${OUTDIR}/${DISTNAME}-${i}.tar.gz
-    find ${DISTNAME} -name "*.dbg" | sort | tar --no-recursion --mode='u+rw,go+r-w,a+X' --owner=0 --group=0 -c -T - | gzip -9n > ${OUTDIR}/${DISTNAME}-${i}-debug.tar.gz
+    #find ${DISTNAME} -name "*.dbg" | sort | tar --no-recursion --mode='u+rw,go+r-w,a+X' --owner=0 --group=0 -c -T - | gzip -9n > ${OUTDIR}/${DISTNAME}-${i}-debug.tar.gz
     cd ../../
     rm -rf distsrc-${i}
   done
