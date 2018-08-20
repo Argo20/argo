@@ -25,6 +25,7 @@ script: |
   WRAP_DIR=$HOME/wrapped
   HOSTS="arm-linux-gnueabihf"
   CONFIGFLAGS="--enable-upnp-default --enable-glibc-back-compat"
+  CONFIGFLAGS+=" --disable-tests"
   FAKETIME_HOST_PROGS=""
   FAKETIME_PROGS="date ar ranlib nm strip"
   
