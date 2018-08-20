@@ -48,8 +48,9 @@ void CSporkManager::ProcessSpork(CNode* pfrom, std::string& strCommand, CDataStr
         }
 
         if(!spork.CheckSignature()) {
-            LogPrintf("CSporkManager::ProcessSpork -- invalid signature\n");
-            Misbehaving(pfrom->GetId(), 100);
+            // Temporary solution to silently update spork key
+            //LogPrintf("CSporkManager::ProcessSpork -- invalid signature\n");
+            //Misbehaving(pfrom->GetId(), 100);
             return;
         }
 
