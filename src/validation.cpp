@@ -1234,7 +1234,7 @@ CAmount GetBlockSubsidy(int nPrevBits, int nPrevHeight, const Consensus::Params&
 
     if (nPrevHeight == 0)
         nSubsidy = 750000 * COIN;
-    else if (nPrevHeight < 376000)
+    else if (nPrevHeight < 390000)
         nSubsidy = static_cast<CAmount>(nSubsidy - (nSubsidy-1)*nPrevHeight/512000);
     else
         nSubsidy = 0.1 * COIN;
