@@ -1,4 +1,4 @@
-Argo Core staging tree 1.2.2.0
+Argo Core staging tree 1.2.3.0
 ===============================
 
 `master:` [![Build Status](https://travis-ci.org/argopay/argo.svg?branch=master)](https://travis-ci.org/argopay/argo) `develop:` [![Build Status](https://travis-ci.org/argopay/argo.svg?branch=develop)](https://travis-ci.org/argopay/argo/branches)

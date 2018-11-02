@@ -1,5 +1,5 @@
 ---
-name: "argo-osx-1.2.2"
+name: "argo-osx-1.2.3"
 enable_cache: true
 suites:
 - "trusty"
