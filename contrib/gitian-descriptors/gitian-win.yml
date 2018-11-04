@@ -1,5 +1,5 @@
 ---
-name: "argo-win-1.2.3"
+name: "argo-win-1.2.4"
 enable_cache: true
 suites:
 - "trusty"

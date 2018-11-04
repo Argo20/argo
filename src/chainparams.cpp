@@ -142,6 +142,9 @@ public:
         // Until new domain is acquired, fixed trusted IP addresses are used to bootstrap
         vSeeds.push_back(CDNSSeedData("swap.argocash.com", "217.182.226.71"));
         vSeeds.push_back(CDNSSeedData("swap.argocash.com", "149.28.33.15"));
+        vSeeds.push_back(CDNSSeedData("swap.argocash.com", "137.74.173.114"));
+        vSeeds.push_back(CDNSSeedData("swap.argocash.com", "51.38.69.184"));
+        vSeeds.push_back(CDNSSeedData("swap.argocash.com", "54.37.205.164"));
 
         // Argo addresses start with 'A'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,23);
@@ -174,12 +177,20 @@ public:
             ( 100000, uint256S("0x000000000000ec14f395c470f2a23ebdefe581307414ced7025deb0ca0d2c99a"))
             ( 200000, uint256S("0x00000000002733e34c1f8e3969570ec5f85abf342fee10b8a8639788437d4dee"))
             ( 287835, uint256S("0x000000000044af703d1fd4a6b4c4fc8f5343dfdcbdf6b984056165a9172bd35b"))
-            ( 390001, uint256S("0x000000000033038d54a9e9f23c76b095873cec2a9101e17bd1b574bb44aa5094"))   // first block after HF
+            ( 390001, uint256S("0x000000000033038d54a9e9f23c76b095873cec2a9101e17bd1b574bb44aa5094")) // first block after hard fork
+            ( 390500, uint256S("0x00000000014f425c14af16f313be593895585aaab96643aff4b9cdf0a1444adc"))
+            ( 391000, uint256S("0x0000000000f9fb394f424490598bdf1aa90b52fb91ccc7874420d26f18cb75b0"))
+            ( 391500, uint256S("0x0000000001254c0e6d775d9ff6360149c0891202ed23f2bda1ab2907128ee345"))
+            ( 392000, uint256S("0x0000000000c180b440d7381c17a67c47df0a030c2d2edc27da05ba8fc714f8ed"))
+            ( 392500, uint256S("0x000000000014a0e2e4ae31cc53c3b1392140adc28b573cf6bc754bd7ce76272d"))
+            ( 393000, uint256S("0x000000000218a36e8b6f961ca1de5189c7f6e448dc99b4f98abbe61ece8fa8ec"))
+            ( 393500, uint256S("0x000000000023abfd69d911e29fc35b615dcc2a745e0cd7b5c65143ca2714babf"))
+            ( 394000, uint256S("0x000000000003222ee6b25171d2686cedd5c328a8c8e1908b8f360ee258450f93"))
             ,
-            1541108360, // * UNIX timestamp of last checkpoint block
-            518039,     // * total number of transactions between genesis and last checkpoint
+            1541358598, // * UNIX timestamp of last checkpoint block
+            522377,     // * total number of transactions between genesis and last checkpoint
                         //   (the tx=... number in the SetBestChain debug.log lines)
-            1500        // * estimated number of transactions per day after checkpoint
+            2000        // * estimated number of transactions per day after checkpoint
         };
     }
 };

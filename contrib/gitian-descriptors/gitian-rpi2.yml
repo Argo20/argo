@@ -1,5 +1,5 @@
 ---
-name: "argo-raspberry-1.2.3"
+name: "argo-raspberry-1.2.4"
 enable_cache: true
 suites:
 - "precise"
